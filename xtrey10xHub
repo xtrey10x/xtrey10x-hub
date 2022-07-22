@@ -1,24 +1,18 @@
-
 if game.PlaceId == 5956785391 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10x-Projectslaers13"))()
 end
-
 if game.PlaceId == 863266079 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Xtrey10x%20Hub%20-%20APR2""))()
 end
-
 if game.PlaceId == 4616652839 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Xtrey10x%20Hub%20Shindo.lua""))()
 end
-
 if game.PlaceId == 8204899140 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/football%20fusion.lua"))()
 end
-
 if game.PlaceId == 286090429 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Xtrey10x%20-%20Arsenal"))()
 end
-
 if game.PlaceId == 7540727946 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Hoops%20Life.lua"))()"))()
 end

@@ -1,4 +1,4 @@
-if game.PlaceId == 5956785391 then
+if game.PlaceId == 6152116144 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10x-Projectslaers13.lua"))()
 end
 if game.PlaceId == 863266079 then

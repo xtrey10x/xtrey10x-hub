@@ -1,4 +1,4 @@
-if game.PlaceId == 2124720684 then
+if game.PlaceId == 2124841545 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10xhubdragonballmultiverse"))()
 end
 if game.PlaceId == 10266164381 then

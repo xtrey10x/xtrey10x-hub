@@ -1,5 +1,5 @@
 
-if game.PlaceId == 2274701129 or game.PlaceId == 7034703884 or game.PlaceId == 2124841545 or game.PlaceId == 9612879759 or game.PlaceId == 7034704024 or game.PlaceId == 4586100405 or game.PlaceId == 4147393260 or game.PlaceId == 8192000095 or game.PlaceId == 9621187271 then
+if game.PlaceId == 2274701129 or game.PlaceId == 7034703884 or game.PlaceId == 2124841545 or game.PlaceId == 9612879759 or game.PlaceId == 7034704024 or game.PlaceId == 4586100405 or game.PlaceId == 4147393260 or game.PlaceId == 8192000095 or game.PlaceId == 9621187271 game.PlaceId == 4147411085 game.PlaceId == 4586100405 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10xhubdragonballmultiverse"))()
 end
 if game.PlaceId == 10266164381 then

@@ -1,4 +1,4 @@
-if game.PlaceId == 212 then
+if game.PlaceId == 22774701129 or game.PlaceId == 7034703884 or game.PlaceId == 2124841545 or game.PlaceId == 9612879759 or game.PlaceId == 7034704024 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10xhubdragonballmultiverse"))()
 end
 if game.PlaceId == 10266164381 then
@@ -8,7 +8,7 @@ if game.PlaceId == 3978370137 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Xtrey10xGpo"))()
 end
 if game.PlaceId == 6152116144 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10x-Projectslaers13.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10x-Projectslaers13453fg.lua"))()
 end
 if game.PlaceId == 863266079 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Xtrey10x%20Hub%20-%20APR2.lua"))()

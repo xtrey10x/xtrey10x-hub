@@ -1,8 +1,8 @@
 if game.placeId == 5895971007
-loadstring(game:HttpGet("https://github.com/xtrey10x/xtrey10x-hub/blob/main/Allusions"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Allusions"))()
 end
 if game.placeId == 3382113885 or game.PlaceId == 4355528079
-loadstring(game:HttpGet("https://github.com/xtrey10x/xtrey10x-hub/blob/main/Sevendeadsins"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/Sevendeadsins"))()
 end
 if game.PlaceId == 2274701129 or game.PlaceId == 7034703884 or game.PlaceId == 2124841545 or game.PlaceId == 9612879759 or game.PlaceId == 7034704024 or game.PlaceId == 4586100405 or game.PlaceId == 4147393260 or game.PlaceId == 8192000095 or game.PlaceId == 9621187271 or game.PlaceId == 4147411085  or game.PlaceId == 4586100405 or game.PlaceId == 2274711816 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10xhubdragonballmultiverse"))()

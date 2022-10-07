@@ -1,3 +1,6 @@
+if game.placeId == 2883208470 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/sh0002nen%202"))()
+end
 if game.placeId == 8448881160 or game.placeId == 10240522770  or game.placeId == 10107441386 or game.placeId == 8657449735 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/xtrey10xRbWorld4"))()
 end

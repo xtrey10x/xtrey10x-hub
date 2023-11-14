@@ -1,0 +1,36 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Xtrey10x Hub - Online Business Simulator 3", "GrapeTheme")
+local Tab = Window:NewTab("General")
+local Section = Tab:NewSection("General - Auto Farm")
+Section:NewToggle("Auto Work", "Auto Works", function(Value)
+   _G.Work = Value
+   while wait() do
+    if _G.Work == false then break end
+    game:GetService("Players").LocalPlayer.PlayerGui.TapTapGameplay.TapServer.ServerEvent:FireServer()
+   end
+end)
+Section:NewToggle("Auto PrisonTime", "Auto PrisonTime", function(Value)
+    _G.PrisonTime = Value
+
+    while wait() do
+        if _G.PrisonTime == false then break end
+        if game:GetService("Players").LocalPlayer.PlayerGui.Court.Court then
+        game:GetService("Players").LocalPlayer.PlayerGui.Court.Court.PrisonTaps:FireServer()
+        end
+    end
+end)
+local Section = Tab:NewSection("General - Settings")
+Section:NewToggle("Auto StartWorkingWork", "Auto Works", function(Value)
+   _G.Work2 = Value
+   while wait() do
+    if _G.Work2 == false then break end
+    game:GetService("ReplicatedStorage").Events.StartWorking:FireServer()
+   end
+end)
+Section:NewToggle("Auto Collect Work", "Auto Works", function(Value)
+   _G.Work23 = Value
+   while wait() do
+    if _G.Work23 == false then break end
+    game:GetService("ReplicatedStorage").Events.CollectWork:InvokeServer()
+   end
+end)

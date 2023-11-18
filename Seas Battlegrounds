@@ -1,0 +1,162 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Xtrey10x Hub - [RELEASED] Seas Battlegrounds",
+    LoadingTitle = "Xtrey10x",
+    LoadingSubtitle = "by Xtrey10x",
+    ConfigurationSaving = {
+       Enabled = false,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Xtrey10x Hub Seas Battlegrounds"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Untitled",
+       Subtitle = "Key System",
+       Note = "No method of obtaining the key is provided",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+ local Tab = Window:CreateTab("General", 4483362458) -- Title, Image
+ local Section = Tab:CreateSection("Farm")
+ local Toggle = Tab:CreateToggle({
+    Name = "AutoFarm ClosestPlayer",
+    CurrentValue = false,
+    Flag = "dawdawdwa", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+   local Player = game:GetService("Players")
+   local LP = Player.LocalPlayer
+   local Dis = math.huge
+    _G.autofarm = Value
+
+   game:GetService("RunService").RenderStepped:Connect(function()
+    if _G.autofarm == true then
+   for i,v in pairs(Player:GetPlayers()) do
+    if v.Name ~= LP.Name then
+        if (LP.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude <= Dis then
+            LP.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,5)
+        end
+    end
+   end
+-- remote
+end
+end)
+end,
+})
+local Slider = Tab:CreateSlider({
+    Name = "Hitbox Size",
+    Range = {0, 50},
+    Increment = 1,
+    Suffix = "Size",
+    CurrentValue = 2,
+    Flag = "Slider1fasf", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+   Size = Value
+    end,
+ })
+local Toggle = Tab:CreateToggle({
+    Name = "Player Hitbox",
+    CurrentValue = false,
+    Flag = "dawdawdwa", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+   local Player = game:GetService("Players")
+   local LP = Player.LocalPlayer
+
+
+
+    _G.autofarm1 = Value
+
+   game:GetService("RunService").RenderStepped:Connect(function()
+    if _G.autofarm1 == true then
+   for i,v in pairs(Player:GetPlayers()) do
+    if v.Name ~= LP.Name then
+       v.Character.HumanoidRootPart.Size = Vector3.new(Size,Size,Size)
+        end
+    end
+   end
+-- remote
+end)
+end,
+})
+local Section = Tab:CreateSection("Misc")
+local Toggle = Tab:CreateToggle({
+    Name = "Players Esp",
+    CurrentValue = false,
+    Flag = "Togdadagle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        local player = game:GetService("Players")
+        local LP = player.LocalPlayer
+        _G.Esp = Value
+
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if _G.Esp == true then
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do -- grabs everything from workspace
+                if v.Name ~= LP.Name  then -- checks if it has a handle and if its a touchtransmitter
+                        if not v.Character:FindFirstChild("Xtrey10xHubEsp") then
+        local billboard_gui = Instance.new("BillboardGui")
+        billboard_gui.Active = true
+        billboard_gui.AlwaysOnTop = true
+        billboard_gui.ClipsDescendants = true
+        billboard_gui.ExtentsOffsetWorldSpace = Vector3.new(0, 2, 0)
+        billboard_gui.LightInfluence = 1
+        billboard_gui.Size = UDim2.new(0, 200, 0, 50)
+        billboard_gui.ResetOnSpawn = true
+        billboard_gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        billboard_gui.Parent = v.Character
+        billboard_gui.Name = "Xtrey10xHubEsp"
+        
+        
+        local text_label = Instance.new("TextLabel")
+        text_label.Font = Enum.Font.GothamBlack
+        text_label.RichText = true
+        text_label.Text = v.Name
+        text_label.TextColor3 = Color3.new(1, 0, 0)
+        text_label.TextScaled = true
+        text_label.TextSize = 10
+        text_label.TextStrokeTransparency = 0.5
+        text_label.TextWrapped = true
+        text_label.BackgroundColor3 = Color3.new(1, 1, 1)
+        text_label.BackgroundTransparency = 1
+        text_label.BorderColor3 = Color3.new(0, 0, 0)
+        text_label.BorderSizePixel = 0
+        text_label.Size = UDim2.new(0, 200, 0, 25)
+        text_label.Visible = true
+        text_label.Parent = billboard_gui
+
+                end
+        end
+end
+end
+end)
+    end,
+ })
+ local Section = Tab:CreateSection("LocalPlayer")
+ local Slider = Tab:CreateSlider({
+    Name = "WalkSpeed",
+    Range = {0, 100},
+    Increment = 1,
+    Suffix = "WalkSpeed",
+    CurrentValue = 16,
+    Flag = "Slider1dwada", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end,
+ })
+ local Slider = Tab:CreateSlider({
+    Name = "JumpPower",
+    Range = {0, 100},
+    Increment = 1,
+    Suffix = "JumpPower",
+    CurrentValue = 50,
+    Flag = "Slider1dwada", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end,
+ })
